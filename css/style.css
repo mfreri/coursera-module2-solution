@@ -1,0 +1,78 @@
+/********** Base styles **********/
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+  font-weight: normal;
+}
+
+.card {
+  background-color: #999999;
+  border: 1px solid black;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  font-size: 125%;
+}
+
+.cardTitle {
+  border: 1px solid black;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+#chicken .cardTitle {
+  background-color: #d59898;
+}
+
+#beef .cardTitle {
+  background-color: #c14543;
+  color: white;
+}
+
+#sushi .cardTitle {
+  background-color: #e5d198;
+}
+
+.cardContent {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Screen sizes */
+
+/* Large screen */
+@media (min-width:  992px) {
+  .card {
+    width: 25%;
+    margin-right: 0;
+    float: left;
+  }
+}
+
+/* Medium screen */
+@media (min-width:  768px) and (max-width:  991px) {
+  #chicken {
+    width: 43%;
+    float: left;
+    margin-right: auto;
+  }
+  #beef {
+    width: 43%;
+    float: right;
+    margin-left: auto;
+  }
+  #sushi {
+    float: left;
+  }
+}
